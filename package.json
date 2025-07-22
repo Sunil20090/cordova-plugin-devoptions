@@ -1,0 +1,19 @@
+{
+    "name": "cordova-plugin-devoptions",
+    "version": "1.0.0",
+    "description": "Cordova plugin to detect if Developer Options are enabled on Android",
+    "cordova": {
+        "id": "cordova-plugin-devoptions",
+        "platforms": [
+            "android"
+        ]
+    },
+    "keywords": [
+        "cordova",
+        "plugin",
+        "android",
+        "developer options"
+    ],
+    "author": "Your Name",
+    "license": "MIT"
+}
