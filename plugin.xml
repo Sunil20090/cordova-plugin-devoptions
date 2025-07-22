@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-dev-options" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <name>DevOptions</name>
+    <description>Check if Developer Options are enabled on Android</description>
+    <license>MIT</license>
+    <keywords>cordova, developer options, android</keywords>
+    <engines>
+        <engine name="cordova" version=">=7.0.0" />
+    </engines>
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_SECURE_SETTINGS" />
+        </config-file>
+        <source-file src="src/android/DevOptions.java" target-dir="src/cordova/plugin" />
+    </platform>
+</plugin>
