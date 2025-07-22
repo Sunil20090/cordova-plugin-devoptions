@@ -1,4 +1,4 @@
-package cordova.plugin;
+package com.tpddl.mitr;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
