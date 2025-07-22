@@ -15,6 +15,6 @@
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.READ_SECURE_SETTINGS" />
         </config-file>
-        <source-file src="src/android/DevOptions.java" target-dir="src/cordova/plugin" />
+        <source-file src="src/android/DevOptions.java" target-dir="src/com/tpddl/mitr" />
     </platform>
 </plugin>
