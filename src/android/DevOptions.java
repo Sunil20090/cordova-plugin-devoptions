@@ -9,7 +9,7 @@ public class DevOptions extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if ("isDevOptionsEnabled".equals(action)) {
+        if (action.equals("isDevOptionsEnabled")) {
             boolean enabled = isDeveloperOptionsEnabled();
             callbackContext.success(enabled ? 1 : 0); // send 1 or 0 back
             return true;
