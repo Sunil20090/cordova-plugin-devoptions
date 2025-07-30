@@ -14,7 +14,15 @@
     <platform name="android">
         <config-file target="AndroidManifest.xml" parent="/*">
             <uses-permission android:name="android.permission.READ_SECURE_SETTINGS" />
+            
         </config-file>
+        
         <source-file src="src/android/DevOptions.java" target-dir="src/com/tpddl/mitr" />
+
+         <config-file target="config.xml" parent="/*">
+            <feature name="DevOptions">
+                <param name="android-package" value="src.com.tpddl.mitr.DevOptions"/>
+            </feature>
+        </config-file>
     </platform>
 </plugin>
